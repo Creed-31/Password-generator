@@ -18,7 +18,9 @@ ________________________________________________________________________________
 print("")
 
 def main():
-    selection = input("What level of password is desired? (weak/medium/strong): ").lower()
+    """INPUT: "weak", "medium" or "strong"
+    OUT: a new password"""
+    selection = input("Which level of security is desired for your password? (weak/medium/strong): ").lower()
 
     if selection == 'weak':
         faible()
@@ -27,7 +29,7 @@ def main():
     elif selection == 'strong':
         solide()
     else:
-        print("Invalid choice. Please choose between 'weak', 'medium', or 'strong'.")
+        print("Invalid choice. Please choose between 'weak', 'medium', or 'strong' without the " ".")
         main()
 
 
@@ -57,10 +59,10 @@ def moyen():
 
 def solide():
     password = ''.join(random.choices(lowercase_characters + uppercase_characters + digit_characters + special_characters, k=21))
-    print("")
-    print("The generated password is:", password)
-    print("")
-    request = input("Did you want a other password (y/n): ")
+    
+    print("\n""The generated password is:""\n", password )
+    
+    request = input("Do you want an other password (y/n): ")
     print("--------------------------------------------------")
     if request == 'y':
         main()
