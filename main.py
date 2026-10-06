@@ -21,17 +21,17 @@ def main():
     selection = input("What level of password is desired? (weak/medium/strong): ").lower()
 
     if selection == 'weak':
-        faible()
+        weak()
     elif selection == 'medium':
-        moyen()
+        medium()
     elif selection == 'strong':
-        solide()
+        strong()
     else:
         print("Invalid choice. Please choose between 'weak', 'medium', or 'strong'.")
         main()
 
 
-def faible():
+def weak():
     password = ''.join(random.choices(lowercase_characters + uppercase_characters, k=5))
     print("")
     print("The generated password is:", password)
@@ -43,7 +43,7 @@ def faible():
     else:
         return
 
-def moyen():
+def medium():
     password = ''.join(random.choices(lowercase_characters + uppercase_characters + digit_characters, k=15))
     print("")
     print("The generated password is:", password)
@@ -55,7 +55,7 @@ def moyen():
     else:
         return
 
-def solide():
+def strong():
     password = ''.join(random.choices(lowercase_characters + uppercase_characters + digit_characters + special_characters, k=21))
     print("")
     print("The generated password is:", password)
