@@ -5,13 +5,15 @@
 </p>
 
 <p align="center">
+  <img src="banner.png" alt="Password Generator Banner">
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white" alt="Python">
   <img src="https://img.shields.io/badge/Platform-Linux-lightgrey?logo=linux&logoColor=white" alt="Linux">
   <img src="https://img.shields.io/badge/License-MIT-green" alt="License MIT">
 </p>
-<p align="center">
-  <img src="banner.png" alt="Password Generator Banner">
-</p>
+
 
 ---
 
