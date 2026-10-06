@@ -10,7 +10,7 @@
   <img src="https://img.shields.io/badge/License-MIT-green" alt="License MIT">
 </p>
 <p align="center">
-  <img src="assets/Banner.PNG" alt="Password Generator Banner">
+  <img src="banner.png" alt="Password Generator Banner">
 </p>
 
 ---
